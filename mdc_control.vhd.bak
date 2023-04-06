@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mdc_control is
+port( i_GO:				in std_logic;		-- entrada GO
+		i_XY_IGUAIS:	in std_logic;		-- entrada verificação igualdade
+		i_XY_MAIOR:		in std_logic;		-- entrada verificação maior/menor
+		o_RDY:			out std_logic;		-- saída RDY
+		o_LD_X:			out std_logic;		-- saída load x
+		o_LD_Y:			out std_logic;		-- saída load y
+		o_SEL_X:			out std_logic;		-- saída seleção x
+		o_SEL_Y:			out std_logic;		-- saída seleção y
+		o_D:				out std_logic;		-- sáida d
+		o_XY_SUB:		out std_logic;		-- sáida x maior que y
+		o_YX_SUB:		out std_logic);		-- saída y maior que x
+end mdc_control;
+
